@@ -6,14 +6,13 @@ class Shape
     public string $name;
     public string $color;
 
-    public function __construct( $name, $color)
+    public function __construct( $color)
     {
-        $this->name = $name;
         $this->color=$color;
     }
 
     public function show(): string
     {
-        return "My shape is". $this->name."color:".$this->color;
+        return "shape color:".$this->color;
     }
 }
